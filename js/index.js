@@ -93,6 +93,7 @@ if(error !== ""){
     outputField.innerHTML=error;
     error="";
 }else{
+  outputField.innerHTML="";
     animateText("output", output, 100)
 }
   
