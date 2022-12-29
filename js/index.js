@@ -20,10 +20,9 @@ inputField.addEventListener("focus", ()=>{
 const recibirForm = (event) => {
   event.preventDefault();
   let text = event.target.text.value;
-  let encodeValue = event.target.index.value;
   //= Llamo a la funcion encode enviandole el string del usuario
   
-  encode(text,encodeValue);
+  encode(text);
 };
 
 
@@ -55,7 +54,6 @@ function comprobar(char){
 const encode = (text, encodeValue) => {
   //== Declaro una variable output
   var output = "";
- console.log( typeof(encodeValue))
   //== Recorro todo el string para codificar
   for (let i = 0; i < text.length; i++) {
     let temp = text[i];
@@ -70,19 +68,19 @@ const encode = (text, encodeValue) => {
 
         if(kind === 1){
 
-            pos = abc.indexOf(temp.toUpperCase()) + Number(encodeValue);
+            pos = abc.indexOf(temp.toUpperCase()) + 5;
             if(pos>abc.length) abc += abc;
             output+=abc[pos];
 
         }else if(kind === 2){
 
-            pos = nums.indexOf(temp) + Number(encodeValue);
+            pos = nums.indexOf(temp) + 5;
             if(pos>nums.length) nums += nums;
             output+=nums[pos];
 
         }else if(kind === 3){
 
-            pos = simbols.indexOf(temp) + Number(encodeValue);
+            pos = simbols.indexOf(temp) + 5;
             if(pos>simbols.length) simbols += simbols;
             output+=simbols[pos];
 

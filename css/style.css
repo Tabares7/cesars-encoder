@@ -100,7 +100,14 @@ body {
   font-size: 1.2rem;
 }
 .footer__media {
+  margin: 1rem auto;
+}
+.footer__media__link {
   list-style: none;
+}
+.footer__media__link a {
+  text-decoration: none;
+  margin: 1rem 0 0 -3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
