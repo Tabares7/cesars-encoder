@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__card">
+        <form id="form" action="" class="main__card__form">
+          <textarea
+            name="text"
+            placeholder="Text to encode"
+            value=""
+            id="text"
+            rows="5"
+            class="main__card__form__input"
+          ></textarea>
+          <input
+            type="number"
+            name="index"
+            id="encodeValue"
+            class="main__card__form__index"
+            min="5"
+            max="10"
+            step="1"
+            value="5"
+          />
+          <button type="submit" class="main__card__form__btn">Encode</button>
+        </form>
+        <p class="main__card__output" id="output"></p>
+      </div>
+      <p class="main__description">
+        César's code is a simple form of encryption that consists of shifting
+        each letter of a message a fixed number of positions in the alphabet.
+        For example, if the offset is 3 positions, then A becomes D, B becomes
+        E, and so on.
+      </p>
+    </main>
+  </body>
+</html>

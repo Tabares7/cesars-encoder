@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,600;1,300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 60vw;
+}
+.main__card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 10px 15px 10px rgba(59, 28, 46, 0.2470588235);
+}
+@media (max-width: 390px) {
+  .main__card {
+    max-width: 80vw;
+  }
+}
+.main__card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__card__form__input {
+  border: 0;
+  border-bottom: #41dfff 2px solid;
+  outline: 0;
+  height: 5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.main__card__form__index {
+  font-size: large;
+  color: #41dfff;
+  border: 0;
+  border-bottom: #41dfff 2px solid;
+  outline: 0;
+  height: 2rem;
+  font-weight: 600;
+}
+.main__card__form__btn {
+  padding: 1rem 0;
+  font-weight: 600;
+  border: white 2px solid;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right top, #5ffbf1, #41dfff, #69bff8, #52cffe, #8aa7ec, #d16ba5);
+  color: white;
+  font-size: 1.01rem;
+}
+.main__card__form__btn:hover {
+  border: white 2px solid;
+  background-image: linear-gradient(to right top, #d16ba5, #8aa7ec, #69bff8, #52cffe, #41dfff, #5ffbf1);
+  cursor: pointer;
+}
+.main__card__output {
+  margin: 2rem auto;
+  min-height: 2rem;
+  max-width: 60vh;
+  font-weight: 700;
+}
+.main__description {
+  margin-top: 5rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
